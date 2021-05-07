@@ -782,6 +782,7 @@ static int charset_auto(MYSQL *my __attribute__((unused)))
 /* check if all server character sets are supported */
 static int test_conc223(MYSQL *mysql)
 {
+  SKIP_MYSQL(mysql);
   int rc;
   MYSQL_RES *res;
   MYSQL_ROW row;
